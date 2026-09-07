@@ -1,5 +1,8 @@
 {
   "season": 2026,
-  "next_week": 2,
-  "used_teams": ["LAC"]
+  "next_week": 3,
+  "used_teams": [
+    "LAC",
+    "SF"
+  ]
 }
