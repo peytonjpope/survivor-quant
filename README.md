@@ -1,4 +1,4 @@
-# NFL Survivor Auto-Picker
+# Survivor Quant
 
 Computes a weekly NFL survivor pool pick and emails it automatically via
 GitHub Actions. The decision rule (Elo ratings, de-vigged market odds, an
@@ -83,13 +83,13 @@ The workflow (`.github/workflows/weekly_pick.yml`) runs every Tuesday
 state file back to the repo. It needs three repo secrets:
 
 ```bash
-gh secret set GMAIL_ADDRESS --repo peytonjpope/nfl-survivor
-gh secret set GMAIL_APP_PASSWORD --repo peytonjpope/nfl-survivor   # a Gmail App Password, not your login password
-gh secret set TO_EMAIL --repo peytonjpope/nfl-survivor
+gh secret set GMAIL_ADDRESS --repo peytonjpope/survivor-quant
+gh secret set GMAIL_APP_PASSWORD --repo peytonjpope/survivor-quant   # a Gmail App Password, not your login password
+gh secret set TO_EMAIL --repo peytonjpope/survivor-quant
 ```
 
 To trigger a real run manually (e.g. to catch up a missed week):
 
 ```bash
-gh workflow run weekly_pick.yml --repo peytonjpope/nfl-survivor
+gh workflow run weekly_pick.yml --repo peytonjpope/survivor-quant
 ```
