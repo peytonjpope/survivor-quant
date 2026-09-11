@@ -99,6 +99,8 @@ def format_report(season, week, result, all_candidates):
             f"favorite_margin={c['favorite_margin']:+.1f}  "
             f"proj_wins_remaining={c['proj_wins_remaining']:.2f}"
         )
+    lines.append("")
+    lines.append("Make your pick: https://football.fantasysports.yahoo.com/survival/29357/")
     return "\n".join(lines)
 
 
